@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Luke Barber</title>
-        <meta name="homepage" content="the various and sundry adventures of Luke Barber">
-        <link rel="stylesheet" href="main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    </head>
+<head>
+<title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Luke Barber</title>
+    <meta name="homepage" content="the various and sundry adventures of Luke Barber">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!--Code for Loading Navbar-->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+</head>
     <body>
-        <div class="navbar">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="engineering_products.html">Engineering Projects</a></li>
-              <li><a href="articles.html">Articles</a></li>
-              <li><a href="pipemaking.html">Pipemaking</a></li>
-                <li><a href="soc_med.html">Social Media</a></li>
-            </ul>
+        <!--#######################-->
+        <!--Code For Loading Navbar-->
+        <!--#######################-->
+        <div id="nav-placeholder">
         </div>
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("navbar.html")
+            });
+        </script>
         
-        <div class="articles">
-            
+        <!--##################-->
+        <!--Additional Content-->
+        <!--##################-->
+        <div class="homepage">
+            <center>
+                <br>
+                <i>No Articles Posted at the Present Time</i>
+            </center>
         </div>
     </body>
+
 </html>
