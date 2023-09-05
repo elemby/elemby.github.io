@@ -2,6 +2,36 @@ body{
     background-color: #a3c1ad;
 }
 
+.title h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.textbody body{
+    padding: 10%;
+    margin:10%;
+}
+/*#######################
+# CSS for Resume Button #
+#######################*/
+
+.resume a {
+    padding: 8px;
+    background-color: teal;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.resume a:hover {
+    background-color: thistle;
+    color: #000;
+    font-weight: bolder;
+    
+}
 
 /*########################
 # CSS for Navigation Bar #
