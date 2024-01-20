@@ -32,12 +32,50 @@
         <!--##################-->
         <!--Additional Content-->
         <!--##################-->
-        <div class="">
+        <button class="accordion">Video Analytics at the Edge (USF Senior Capstone Project) (2023)</button>
+        <div class="panel">
+            <p>Please use the link: <a href="https://da-edge.github.io/">Data Analytics at the Edge</a></p>
+        </div>
+
+        <button class="accordion">EKG and Machine Learning (2023)</button>
+        <div class="panel">
+          <p>Studies have shown that many individuals presenting to general-care medical centers expierencing cardiac abnormalities are misdiagnosed. The number of indiviuals misdiagnosed at specialists is decreased significantly, however misdiagnosis does still occur. To address and remedy this, we have constructed a device that obtains an EKG signal from an individual. This EKG signal is then fed into an SBC which uses machine learning to identify if an individual from a number of cardiac conditions. The machine learning model was trained using the MIT-BIH Arrythmia dataset. Preliminary testing was promising, showing an accuracy of ~60%.</p>
+        </div>
+
+        <button class="accordion">Automatic Camera for Appraisal Applications (2023-2024)</button>
+        <div class="panel">
+            <p>Property Appraisers and Revenue Agents are often required to take pictures of properties as part of their assessment duties. However, it is not uncommon for these individuals to simply forget to take these pictures in the midst of their other responsibilities. To remedy this situation, an automatic camera system has been devised.</p>
+            This system includes the following design features:
             <ul>
-                <li>Heart Anomaly Detection (EKG/Machine Learning)</li>
-                <li>Senior Project</li>
+                <li>Self-righting Camera</li>
+                <li>Options to start/stop automatic camera</li>
+                <li>Option to force the camera to take a picture at any point in time</li>
+                <li>Preview screen</li>
+                <li>Picture storage to USB storage device</li>
             </ul>
         </div>
+        
+        <button class="accordion">Bagpipe Pressure Sensor with RF Transmitter (2024)</button>
+        <div class="panel">
+          <p>One of the primary challenges for beginning pipers is maintaing a steady bag pressure. The ability to maintain constant pressure is essential for tuning the drones and preventing the chanter from "choking". The traditional method of addressing this issue has been to construct a manometer. The manometer is effective but has the downside of requiring a tube to be attached to one of the drones. Keeping this tube in the drone can be difficult. Furthermore, the tube reduces mobility and takes one drone out of service. To address this issue, I have constructed a two part device. One part remains inside the bag. This internal part uses a Bosch BME280 sensor to measure the pressure inside the bag, the data obtained from this device is then broadcast using a 433MHz RF Transmitter. The second part stays outside of the bagpipe and is placed where an individual may see it. This external part recieves the broadcast RF signal and uses and LED bar graph to indicate the steadiness of the pressure. The external part also features a dial that allows the user to dial-in a specific pressure level, allowing users to fine-tune the system for easy/medium/hard reeds.</p>
+        </div>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
     </body>
 
 </html>
