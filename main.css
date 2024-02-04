@@ -33,6 +33,20 @@ body{
     
 }
 
+/*#########################
+# CSS for Shoplist Button #
+#########################*/
+
+.shopbox {
+    margin: 5%;
+    border-radius: 20%;
+    background: thistle;
+}
+
+.shopbox p {
+    margin: 5%;
+    padding: 5%;
+}
 /*###########################
 # CSS for Social Media Page #
 ###########################*/
